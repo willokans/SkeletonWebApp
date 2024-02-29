@@ -73,6 +73,12 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("Which of the following numbers is the largest: 7, 50, 63?"), containsString("63"));
   }
 
+  // Which of the following numbers is both a square and a cube: 3375, 2809, 2224, 1, 3832, 783, 4?
+  @Test
+  public void score8() {
+    assertThat(queryProcessor.process("Which of the following numbers is both a square and a cube: 3375, 2809, 2224, 1, 3832, 783, 4?"), containsString("1"));
+  }
+
   // Which of the following numbers is the largest: 59, 43, 54?
 
   // Which of the following numbers is the largest: 68, 16, 34?
