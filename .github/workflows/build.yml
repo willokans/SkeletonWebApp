@@ -16,6 +16,12 @@ jobs:
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
 
+          # Add testing steps
+      - name: Run unit tests
+        run: mvn test
+      - name: Run integration tests
+        run: mvn integration-test
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
