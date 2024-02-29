@@ -25,4 +25,9 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("Deutsche"), containsString("London"));
   }
 
+  @Test
+  public void knowsName() {
+    assertThat(queryProcessor.process("Name"), containsString("Ashney"));
+  }
+
 }

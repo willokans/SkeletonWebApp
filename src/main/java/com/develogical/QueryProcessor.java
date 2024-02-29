@@ -13,6 +13,8 @@ public class QueryProcessor {
     } else if (query.toLowerCase().contains("deutsche")) {
       return "Deutsche Bank AG acting through its London branch ('DB London') " +
               "whose address is 21 Moorfields, London EC2Y 9DB.\n";
+    } else if (query.toLowerCase().contains("name")) {
+      return "WillsAndAshney";
     }
 
     return "";
