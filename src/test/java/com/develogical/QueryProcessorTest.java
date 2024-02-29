@@ -41,6 +41,11 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("Which of the following numbers is the largest: 18, 91, 83?"), containsString("91"));
   }
   // 	Which of the following numbers is the largest: 64, 77, 60?	-10	14:11:22
+  @Test
+  public void score3() {
+    assertThat(queryProcessor.process("Which of the following numbers is the largest: 64, 77, 60?"), containsString("77"));
+  }
+
   //INCORRECT
   //8ac12a49	What is 26 plus 98?	-2.5	14:11:10
   //INCORRECT

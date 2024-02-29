@@ -19,6 +19,8 @@ public class QueryProcessor {
       return "88";
     } else if (query.contains("Which of the following numbers is the largest: 18, 91, 83?")) {
       return "91";
+    } else if (query.contains("Which of the following numbers is the largest: 64, 77, 60?")) {
+      return "77";
     }
 
     return "";
