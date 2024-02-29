@@ -68,6 +68,10 @@ public class QueryProcessorTest {
   }
 
   // Which of the following numbers is the largest: 66, 42, 37?
+  @Test
+  public void score7() {
+    assertThat(queryProcessor.process("Which of the following numbers is the largest: 7, 50, 63?"), containsString("63"));
+  }
 
   // Which of the following numbers is the largest: 59, 43, 54?
 

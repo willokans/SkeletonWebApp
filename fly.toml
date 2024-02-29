@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for wispy-glitter-9234-wild-glitter-9238-will on 2024-02-29T12:03:36Z
+# fly.toml app configuration file generated for wispy-glitter-9234-no-green on 2024-02-29T14:25:19Z
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'wispy-glitter-9234-wild-glitter-9238-will'
+app = 'wispy-glitter-9234-no-green'
 primary_region = 'lhr'
 kill_signal = 'SIGINT'
 kill_timeout = '5s'

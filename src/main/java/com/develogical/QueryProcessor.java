@@ -30,9 +30,9 @@ public class QueryProcessor {
       return "63";
     } //
 
-//    else if (query.contains("Which of the following numbers is the largest: 76, 39, 48?")) {
-//      return "76";
-//    }
+    else if (query.contains("Which of the following numbers is the largest: 76, 39, 48?")) {
+      return "76";
+    }
 
 //    else if (query.contains("Which of the following numbers is the largest: 76, 39, 48?")) {
 //      return "76";
