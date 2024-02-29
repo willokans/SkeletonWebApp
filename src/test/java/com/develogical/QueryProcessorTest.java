@@ -55,6 +55,11 @@ public class QueryProcessorTest {
   }
   //INCORRECT
   //072d8214	Which of the following numbers is the largest: 76, 39, 48?	-13.333333333333334	14:10:59
+
+  @Test
+  public void score5() {
+    assertThat(queryProcessor.process("Which of the following numbers is the largest: 76, 39, 48?"), containsString("76"));
+  }
   //INCORRECT
   //8e9d25b2	What is 95 plus 13?	-2.5	14:10:48
   //INCORRECT
