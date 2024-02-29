@@ -48,6 +48,11 @@ public class QueryProcessorTest {
 
   //INCORRECT
   //8ac12a49	What is 26 plus 98?	-2.5	14:11:10
+
+  @Test
+  public void score4() {
+    assertThat(queryProcessor.process("What is 26 plus 98?"), containsString("124"));
+  }
   //INCORRECT
   //072d8214	Which of the following numbers is the largest: 76, 39, 48?	-13.333333333333334	14:10:59
   //INCORRECT
