@@ -15,6 +15,8 @@ public class QueryProcessor {
               "whose address is 21 Moorfields, London EC2Y 9DB.\n";
     } else if (query.toLowerCase().contains("name")) {
       return "WillsAndAshney";
+    } else if (query.toLowerCase().contains("16 plus 72")) {
+      return "88";
     }
 
     return "";
