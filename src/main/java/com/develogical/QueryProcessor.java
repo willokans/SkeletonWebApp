@@ -10,6 +10,9 @@ public class QueryProcessor {
       return "William Shakespeare (26 April 1564 - 23 April 1616) was an "
           + "English poet, playwright, and actor, widely regarded as the greatest "
           + "writer in the English language and the world's pre-eminent dramatist.";
+    } else if (query.toLowerCase().contains("deutsche")) {
+      return "Deutsche Bank AG acting through its London branch ('DB London') " +
+              "whose address is 21 Moorfields, London EC2Y 9DB.\n";
     }
 
     return "";

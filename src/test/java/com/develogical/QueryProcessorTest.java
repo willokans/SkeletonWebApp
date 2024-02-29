@@ -22,7 +22,7 @@ public class QueryProcessorTest {
 
   @Test
   public void knowsAboutDeutscheBank() {
-    assertThat(queryProcessor.process("Deutsche Bank"), containsString("London"));
+    assertThat(queryProcessor.process("Deutsche"), containsString("London"));
   }
 
 }
