@@ -79,10 +79,14 @@ public class QueryProcessorTest {
     assertThat(queryProcessor.process("Which of the following numbers is both a square and a cube: 3375, 2809, 2224, 1, 3832, 783, 4?"), containsString("1"));
   }
 
-  // Which of the following numbers is the largest: 59, 43, 54?
+  // Which of the following numbers are primes: 56, 36, 53, 19, 17?
+  @Test
+  public void score9() {
+    assertThat(queryProcessor.process("Which of the following numbers are primes: 56, 36, 53, 19, 17?"), containsString("17, 19"));
+  }
 
-  // Which of the following numbers is the largest: 68, 16, 34?
+  // Which of the following numbers is both a square and a cube: 1, 4873, 283, 4237, 64, 2615?
 
-  // Which of the following numbers is the largest: 94, 76, 33?
+  // Which of the following numbers are primes: 97, 13, 10, 7, 40?
 
 }
